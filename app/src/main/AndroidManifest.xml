@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentVerification"
+        tools:targetApi="31"
+        tools:replace="android:icon">
+        <activity
+            android:name=".Payment"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".AdminManual"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UpdateRegisteredDetails"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SendNotification"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminRequestView"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CollectedItems"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentItemView"
+            android:exported="false"
+            android:label="Found Items"
+            android:parentActivityName=".ActivationPage2">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ItemRegistration"
+            android:exported="false"
+            android:label="Register Item"
+            android:parentActivityName=".MainActivity2">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="Admin Login">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AtivationPage2B"
+            android:exported="false"
+            android:label="Create Account"
+            android:parentActivityName=".ActivationPage2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activationpage3"
+            android:exported="false"
+            android:label="Register Lost Item"
+            android:parentActivityName=".StudentItemView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ActivationPage2"
+            android:exported="false"
+            android:label="Student Login"
+            android:parentActivityName=".ActivationPage1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ActivationPage1"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

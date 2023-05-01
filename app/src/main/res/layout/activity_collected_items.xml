@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollectedItems">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/lostitemlogo"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Collected Items"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbars="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                tools:itemCount="1" />
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"
+            android:text="back"
+            android:id="@+id/backButton"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

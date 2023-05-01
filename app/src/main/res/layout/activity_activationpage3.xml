@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activationpage3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Give Details of the lost Item"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number: "
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="07********"
+                android:inputType="phone"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/phoneNumber1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of the lost item: "
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="e.g Keys"
+                android:id="@+id/itemName"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Color/Brand: "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="e.g Yellow/Solex/Plastic"
+                android:id="@+id/itemColor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/give_detailed_description_of_the_item_for_easy_identification_a_paragraph_will_be_helpful"
+                android:id="@+id/itemDescription"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:lines="4"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="log-out"
+                android:id="@+id/exitButton"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="70dp"
+                android:text="submit"
+                android:id="@+id/submitDatabase"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StudentVerification</string>
+    <string name="studentverification">StudentVerification</string>
+    <string name="student_verification">Student Verification</string>
+    <string name="student_verification_app">Student Verification App</string>
+    <string name="give_detailed_description_of_the_item_for_easy_identification_a_paragraph_will_be_helpful">Give detailed description of the item for easy identification. A paragraph will be helpful</string>
+    <string name="_1">1</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="color">Color</string>
+</resources>

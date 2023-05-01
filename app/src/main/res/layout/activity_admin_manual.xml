@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminManual"
+    android:scrollbars="vertical"
+    android:overScrollMode="ifContentScrolls">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Click on the option to display steps to follow"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOW TO REGISTER A NEW USER"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/tv1"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/registerUserManual"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Enter admin password to activate page"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Click 'Register User' button"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Fill form with user details"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOW TO REGISTER COLLECTED ITEM"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/tv2"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/registerItemManual"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Enter admin password to activate page"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Click 'Register item' button"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Fill form with details of the item"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Enter admin password to activate page"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Click 'register' button"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOW TO UPDATE AND DELETE COLLECTED ITEMS' DETAILS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/tv3"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/updateManual"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Enter admin password to activate page"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Click 'Register item' Button"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Click 'View registered Items' button"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. select an item for editing"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Edit details and click 'update' button"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOW TO SEND A MESSAGE TO STUDENT"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:id="@+id/tv4"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/sendMessageManual"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Enter admin password to activate page"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Click 'Register item' button"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. click 'View Available Requests' button"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Select Request from the list"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "5. Click SEND button"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

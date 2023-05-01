@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/adminlogo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/option1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/option2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Requests from Students : "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="20sp"
+                    android:id="@+id/adminRequestCount"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Registered Items : "
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="20sp"
+                    android:id="@+id/adminRegCount"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Register User"
+                    android:id="@+id/regUser" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:text="register item"
+                    android:id="@+id/regItem"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:layout_width="99dp"
+                android:layout_height="98dp"
+                android:src="@mipmap/infopng"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input the admin password in the field below to continue"
+                android:textSize="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="30dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password: "
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="******"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPassword"
+                android:id="@+id/editPassword"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Activate"
+            android:id="@+id/loginButton"/>
+
+    </LinearLayout>
+
+</ScrollView>
